@@ -1,13 +1,13 @@
 {
   "name": "@zhaenggg/dsh-fs-routing",
   "description": "Routing filesystem and subprocess providers: one dsh instance serving local and ssh:// remote workspaces",
-  "version": "0.1.0-rc.5",
+  "version": "0.1.0",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deepseek-ai/deepseek-harness.git",
+    "url": "git+https://github.com/zhaenggg/dsh-ssh-remote.git",
     "directory": "packages/ssh/fs-routing"
   },
   "type": "module",
@@ -37,30 +37,30 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "@deepseek-ai/dsh-invariants": "workspace:^",
-    "@deepseek-ai/cordis": "workspace:^",
-    "@deepseek-ai/dsh-fs": "workspace:^",
-    "@deepseek-ai/dsh-subprocess": "workspace:^"
+    "@deepseek-ai/dsh-invariants": "^0.0.1-rc.1",
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-fs": "^0.0.1-rc.1",
+    "@deepseek-ai/dsh-subprocess": "^0.0.1-rc.1"
   },
   "dependencies": {
-    "@deepseek-ai/schemastery": "workspace:^",
+    "@deepseek-ai/schemastery": "^3.18.1",
     "@zhaenggg/dsh-ssh": "workspace:^",
-    "@deepseek-ai/dsh-fs-local": "workspace:^",
+    "@deepseek-ai/dsh-fs-local": "^0.0.1-rc.1",
     "@zhaenggg/dsh-fs-ssh": "workspace:^",
-    "@deepseek-ai/dsh-subprocess-local": "workspace:^",
+    "@deepseek-ai/dsh-subprocess-local": "^0.0.1-rc.1",
     "@zhaenggg/dsh-subprocess-ssh": "workspace:^",
-    "@deepseek-ai/dsh-fs-sandbox": "workspace:^",
-    "@deepseek-ai/dsh-sandbox": "workspace:^",
-    "@deepseek-ai/dsh-shell": "workspace:^",
-    "@deepseek-ai/dsh-bash-sandbox": "workspace:^"
+    "@deepseek-ai/dsh-fs-sandbox": "^0.0.1-rc.1",
+    "@deepseek-ai/dsh-sandbox": "^0.0.1-rc.1",
+    "@deepseek-ai/dsh-shell": "^0.0.1-rc.1",
+    "@deepseek-ai/dsh-bash-sandbox": "^0.0.1-rc.1"
   },
   "devDependencies": {
-    "@deepseek-ai/cordis-plugin-include": "workspace:^",
-    "@deepseek-ai/cordis-plugin-loader": "workspace:^",
-    "@deepseek-ai/dsh-fs": "workspace:^",
-    "@deepseek-ai/dsh-invariants": "workspace:^",
-    "@deepseek-ai/dsh-sandbox-policy": "workspace:^",
-    "@deepseek-ai/dsh-subprocess": "workspace:^",
-    "@deepseek-ai/cordis": "workspace:^"
+    "@deepseek-ai/cordis-plugin-include": "^1.0.6",
+    "@deepseek-ai/cordis-plugin-loader": "^1.0.2",
+    "@deepseek-ai/dsh-fs": "^0.0.1-rc.1",
+    "@deepseek-ai/dsh-invariants": "^0.0.1-rc.1",
+    "@deepseek-ai/dsh-sandbox-policy": "^0.0.1-rc.1",
+    "@deepseek-ai/dsh-subprocess": "^0.0.1-rc.1",
+    "@deepseek-ai/cordis": "^4.0.1"
   }
 }

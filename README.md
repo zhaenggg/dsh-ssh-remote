@@ -81,6 +81,17 @@ Tests include a REAL-composition suite that boots a test `cordis.yml` through th
 - On a Windows host, the routed local shell wraps only the bash sandbox (remote sessions are unaffected).
 - Remote writes do not create parent directories (SFTP semantics).
 
+## Publish
+
+Packages are published under the `@zhaenggg` scope (`0.1.0`). Dependencies on official `@deepseek-ai/*` packages use the currently published ranges (`dsh-*` `^0.0.1-rc.x`, `cordis` `^4.0.1`); inter-package references use `workspace:` and are resolved at publish time.
+
+```sh
+npm login          # as zhaenggg
+./scripts/publish.sh
+```
+
+Validated against deepseek-harness master (`e11fe1c`) with a real-host e2e on 192.168.21.250.
+
 ## License
 
 MIT

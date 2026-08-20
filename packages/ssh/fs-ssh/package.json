@@ -1,13 +1,13 @@
 {
   "name": "@zhaenggg/dsh-fs-ssh",
   "description": "SSH/SFTP filesystem provider for DeepSeek Harness",
-  "version": "0.1.0-rc.5",
+  "version": "0.1.0",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deepseek-ai/deepseek-harness.git",
+    "url": "git+https://github.com/zhaenggg/dsh-ssh-remote.git",
     "directory": "packages/ssh/fs-ssh"
   },
   "type": "module",
@@ -32,17 +32,17 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "@deepseek-ai/dsh-invariants": "workspace:^",
-    "@deepseek-ai/cordis": "workspace:^",
-    "@deepseek-ai/dsh-fs": "workspace:^"
+    "@deepseek-ai/dsh-invariants": "^0.0.1-rc.1",
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-fs": "^0.0.1-rc.1"
   },
   "dependencies": {
     "@zhaenggg/dsh-ssh": "workspace:^"
   },
   "devDependencies": {
-    "@deepseek-ai/dsh-invariants": "workspace:^",
-    "@deepseek-ai/dsh-fs": "workspace:^",
-    "@deepseek-ai/cordis": "workspace:^",
+    "@deepseek-ai/dsh-invariants": "^0.0.1-rc.1",
+    "@deepseek-ai/dsh-fs": "^0.0.1-rc.1",
+    "@deepseek-ai/cordis": "^4.0.1",
     "@types/ssh2": "^1.15.5"
   }
 }

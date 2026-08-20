@@ -1,13 +1,13 @@
 {
   "name": "@zhaenggg/dsh-client-ui-settings-ssh",
   "description": "SSH remote server settings page for DeepSeek Harness Web GUI",
-  "version": "0.1.0-rc.5",
+  "version": "0.1.0",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deepseek-ai/deepseek-harness.git",
+    "url": "git+https://github.com/zhaenggg/dsh-ssh-remote.git",
     "directory": "packages/client/ui-settings-ssh"
   },
   "type": "module",
@@ -43,20 +43,20 @@
     }
   },
   "peerDependencies": {
-    "@deepseek-ai/dsh-invariants": "workspace:^",
-    "@deepseek-ai/cordis": "workspace:^",
+    "@deepseek-ai/dsh-invariants": "^0.0.1-rc.1",
+    "@deepseek-ai/cordis": "^4.0.1",
     "react": "^18.2.0"
   },
   "dependencies": {
-    "@deepseek-ai/dsh-client-runtime": "workspace:^",
-    "@deepseek-ai/dsh-client-ui-slots": "workspace:^",
-    "@deepseek-ai/dsh-client-ui-settings": "workspace:^",
-    "@deepseek-ai/dsh-api-remotes": "workspace:^"
+    "@deepseek-ai/dsh-client-runtime": "^0.0.1-rc.1",
+    "@deepseek-ai/dsh-client-ui-slots": "^0.0.1-rc.1",
+    "@deepseek-ai/dsh-client-ui-settings": "^0.0.1-rc.1",
+    "@deepseek-ai/dsh-api-remotes": "^0.0.1-rc.1"
   },
   "devDependencies": {
-    "@deepseek-ai/dsh-invariants": "workspace:^",
-    "@deepseek-ai/cordis": "workspace:^",
-    "@deepseek-ai/dsh-client-web-react": "workspace:^",
+    "@deepseek-ai/dsh-invariants": "^0.0.1-rc.1",
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-client-web-react": "^0.0.1-rc.1",
     "react": "^18.2.0",
     "@types/react": "~18.3.1"
   }
