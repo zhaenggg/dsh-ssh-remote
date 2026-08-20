@@ -8,11 +8,11 @@ SSH remote execution plugin set for [DeepSeek Harness](https://github.com/deepse
 
 | Package | Role |
 |---|---|
-| `@zhaenggg/dsh-ssh` | Connection pool (service `ctx.ssh`). Profiles from `DSH_SSH_PROFILES` env (JSON) or the browser-side settings page. No profiles ⇒ local-only, nothing remote activates. |
-| `@zhaenggg/dsh-fs-ssh` | SFTP filesystem backend for the `fs` seam. |
-| `@zhaenggg/dsh-subprocess-ssh` | Remote exec backend for the `subprocess` seam. |
-| `@zhaenggg/dsh-fs-routing` | The composition layer: one `ctx.fs` / `ctx.subprocess` / `ctx.shell` routed by session cwd — local cwds keep the sandboxed local backends, `ssh://` cwds run on the remote host. |
-| `@zhaenggg/dsh-client-ui-settings-ssh` | Browser-side SSH server settings page. |
+| `@zhaeng/dsh-ssh` | Connection pool (service `ctx.ssh`). Profiles from `DSH_SSH_PROFILES` env (JSON) or the browser-side settings page. No profiles ⇒ local-only, nothing remote activates. |
+| `@zhaeng/dsh-fs-ssh` | SFTP filesystem backend for the `fs` seam. |
+| `@zhaeng/dsh-subprocess-ssh` | Remote exec backend for the `subprocess` seam. |
+| `@zhaeng/dsh-fs-routing` | The composition layer: one `ctx.fs` / `ctx.subprocess` / `ctx.shell` routed by session cwd — local cwds keep the sandboxed local backends, `ssh://` cwds run on the remote host. |
+| `@zhaeng/dsh-client-ui-settings-ssh` | Browser-side SSH server settings page. |
 
 `plugins/ssh-selftest` is a dev-only driver that runs one agent turn against an `ssh://` cwd end-to-end.
 
@@ -38,9 +38,9 @@ In your profile's `cordis.patch.yml` (or app composition), replace the single-ba
 
 - insert:
     - id: ssh
-      name: '@zhaenggg/dsh-ssh'
+      name: '@zhaeng/dsh-ssh'
     - id: fs-routing
-      name: '@zhaenggg/dsh-fs-routing'
+      name: '@zhaeng/dsh-fs-routing'
 ```
 
 With no SSH profile configured the composition behaves exactly like the local providers it replaces.

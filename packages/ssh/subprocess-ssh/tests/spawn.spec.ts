@@ -6,7 +6,7 @@
 import { EventEmitter } from 'node:events'
 import { afterEach, describe, expect, it } from 'vitest'
 import { Context } from '@deepseek-ai/cordis'
-import type { Client, SshPoolLike } from '@zhaenggg/dsh-ssh'
+import type { Client, SshPoolLike } from '@zhaeng/dsh-ssh'
 import SshSubprocessRuntime from '../src/index.ts'
 
 let context: Context | undefined

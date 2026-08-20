@@ -1,4 +1,4 @@
-# @zhaenggg/dsh-client-ui-settings-ssh
+# @zhaeng/dsh-client-ui-settings-ssh
 
 [English](README.md) | 中文
 

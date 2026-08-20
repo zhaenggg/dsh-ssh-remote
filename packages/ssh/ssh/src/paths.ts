@@ -1,6 +1,6 @@
 /**
  * Remote-path helpers: ssh://host/path parsing.
- * @module @zhaenggg/dsh-ssh/paths
+ * @module @zhaeng/dsh-ssh/paths
  */
 
 const PREFIX = 'ssh://'

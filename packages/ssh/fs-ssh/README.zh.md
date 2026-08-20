@@ -1,8 +1,8 @@
-# @zhaenggg/dsh-fs-ssh
+# @zhaeng/dsh-fs-ssh
 
 [English](README.md) | 中文
 
-[`@deepseek-ai/dsh-fs`](../../fs/fs/README.md) 能力在 SFTP 之上的 Service Provider：`SshFileSystem`（默认导出）经由共享的 [`ctx.ssh`](../ssh/README.md) 连接池在单台远程主机上实现 `FileSystem` 操作。[`@zhaenggg/dsh-fs-routing`](../fs-routing/README.md) 为每个 host key 构造一个实例并把 `ssh://` 工作区路由过去；该类也可通过 `static inject = ['ssh']` 独立挂载。
+[`@deepseek-ai/dsh-fs`](../../fs/fs/README.md) 能力在 SFTP 之上的 Service Provider：`SshFileSystem`（默认导出）经由共享的 [`ctx.ssh`](../ssh/README.md) 连接池在单台远程主机上实现 `FileSystem` 操作。[`@zhaeng/dsh-fs-routing`](../fs-routing/README.md) 为每个 host key 构造一个实例并把 `ssh://` 工作区路由过去；该类也可通过 `static inject = ['ssh']` 独立挂载。
 
 ## Behavior
 

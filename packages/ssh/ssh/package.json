@@ -1,5 +1,5 @@
 {
-  "name": "@zhaenggg/dsh-ssh",
+  "name": "@zhaeng/dsh-ssh",
   "description": "Shared SSH connection lifecycle for DeepSeek Harness remote-server adapters",
   "version": "0.1.0",
   "publishConfig": {

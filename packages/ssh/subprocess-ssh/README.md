@@ -1,8 +1,8 @@
-# @zhaenggg/dsh-subprocess-ssh
+# @zhaeng/dsh-subprocess-ssh
 
 English | [中文](README.zh.md)
 
-Service Provider for the [`@deepseek-ai/dsh-subprocess`](../../subprocess/subprocess/README.md) capability on a remote SSH host: `SshSubprocessRuntime` (default export, `ctx.subprocess`) executes each spawn spec as one `ssh2` exec channel on the shared [`ctx.ssh`](../ssh/README.md) connection. [`@zhaenggg/dsh-fs-routing`](../fs-routing/README.md) constructs one instance per host key; the spec's `cwd` selects the host.
+Service Provider for the [`@deepseek-ai/dsh-subprocess`](../../subprocess/subprocess/README.md) capability on a remote SSH host: `SshSubprocessRuntime` (default export, `ctx.subprocess`) executes each spawn spec as one `ssh2` exec channel on the shared [`ctx.ssh`](../ssh/README.md) connection. [`@zhaeng/dsh-fs-routing`](../fs-routing/README.md) constructs one instance per host key; the spec's `cwd` selects the host.
 
 ## Behavior
 

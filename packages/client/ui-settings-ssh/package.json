@@ -1,5 +1,5 @@
 {
-  "name": "@zhaenggg/dsh-client-ui-settings-ssh",
+  "name": "@zhaeng/dsh-client-ui-settings-ssh",
   "description": "SSH remote server settings page for DeepSeek Harness Web GUI",
   "version": "0.1.0",
   "publishConfig": {

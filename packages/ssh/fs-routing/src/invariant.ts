@@ -1,13 +1,13 @@
 /**
- * Package-owned invariant companion for `@zhaenggg/dsh-fs-routing`.
- * @module @zhaenggg/dsh-fs-routing/invariant
+ * Package-owned invariant companion for `@zhaeng/dsh-fs-routing`.
+ * @module @zhaeng/dsh-fs-routing/invariant
  */
 
 /* jscpd:ignore-start */
 import type { Context } from '@deepseek-ai/cordis'
 import type { InvariantInstaller } from '@deepseek-ai/dsh-invariants'
 
-const PACKAGE_NAME = '@zhaenggg/dsh-fs-routing'
+const PACKAGE_NAME = '@zhaeng/dsh-fs-routing'
 
 /** Cordis companion plugin name. */
 export const name = 'fs-routing-invariant'

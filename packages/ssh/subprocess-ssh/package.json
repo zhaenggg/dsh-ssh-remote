@@ -1,5 +1,5 @@
 {
-  "name": "@zhaenggg/dsh-subprocess-ssh",
+  "name": "@zhaeng/dsh-subprocess-ssh",
   "description": "SSH subprocess provider for DeepSeek Harness",
   "version": "0.1.0",
   "publishConfig": {
@@ -37,7 +37,7 @@
     "@deepseek-ai/dsh-subprocess": "^0.1.0-rc.2"
   },
   "dependencies": {
-    "@zhaenggg/dsh-ssh": "workspace:^",
+    "@zhaeng/dsh-ssh": "workspace:^",
     "@deepseek-ai/schemastery": "^3.18.1"
   },
   "devDependencies": {

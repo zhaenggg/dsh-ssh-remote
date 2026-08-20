@@ -1,7 +1,7 @@
 import type { Context } from '@deepseek-ai/cordis'
 import type { InvariantInstaller } from '@deepseek-ai/dsh-invariants'
 
-const PACKAGE_NAME = '@zhaenggg/dsh-client-ui-settings-ssh'
+const PACKAGE_NAME = '@zhaeng/dsh-client-ui-settings-ssh'
 export const name = 'ui-settings-ssh-invariant'
 export const inject = ['invariants']
 

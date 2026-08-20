@@ -1,13 +1,13 @@
 /**
- * Package-owned invariant companion for `@zhaenggg/dsh-fs-ssh`.
- * @module @zhaenggg/dsh-fs-ssh/invariant
+ * Package-owned invariant companion for `@zhaeng/dsh-fs-ssh`.
+ * @module @zhaeng/dsh-fs-ssh/invariant
  */
 
 /* jscpd:ignore-start */
 import type { Context } from '@deepseek-ai/cordis'
 import type { InvariantInstaller } from '@deepseek-ai/dsh-invariants'
 
-const PACKAGE_NAME = '@zhaenggg/dsh-fs-ssh'
+const PACKAGE_NAME = '@zhaeng/dsh-fs-ssh'
 
 /** Cordis companion plugin name. */
 export const name = 'fs-ssh-invariant'

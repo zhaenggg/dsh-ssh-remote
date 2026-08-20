@@ -1,13 +1,13 @@
 /**
- * Package-owned invariant companion for `@zhaenggg/dsh-subprocess-ssh`.
- * @module @zhaenggg/dsh-subprocess-ssh/invariant
+ * Package-owned invariant companion for `@zhaeng/dsh-subprocess-ssh`.
+ * @module @zhaeng/dsh-subprocess-ssh/invariant
  */
 
 /* jscpd:ignore-start */
 import type { Context } from '@deepseek-ai/cordis'
 import type { InvariantInstaller } from '@deepseek-ai/dsh-invariants'
 
-const PACKAGE_NAME = '@zhaenggg/dsh-subprocess-ssh'
+const PACKAGE_NAME = '@zhaeng/dsh-subprocess-ssh'
 
 /** Cordis companion plugin name. */
 export const name = 'subprocess-ssh-invariant'

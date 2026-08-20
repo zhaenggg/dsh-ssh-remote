@@ -78,13 +78,13 @@ importers:
       '@deepseek-ai/schemastery':
         specifier: ^3.18.1
         version: 3.18.1
-      '@zhaenggg/dsh-fs-ssh':
+      '@zhaeng/dsh-fs-ssh':
         specifier: workspace:^
         version: link:../fs-ssh
-      '@zhaenggg/dsh-ssh':
+      '@zhaeng/dsh-ssh':
         specifier: workspace:^
         version: link:../ssh
-      '@zhaenggg/dsh-subprocess-ssh':
+      '@zhaeng/dsh-subprocess-ssh':
         specifier: workspace:^
         version: link:../subprocess-ssh
     devDependencies:
@@ -112,7 +112,7 @@ importers:
 
   packages/ssh/fs-ssh:
     dependencies:
-      '@zhaenggg/dsh-ssh':
+      '@zhaeng/dsh-ssh':
         specifier: workspace:^
         version: link:../ssh
     devDependencies:
@@ -156,7 +156,7 @@ importers:
       '@deepseek-ai/schemastery':
         specifier: ^3.18.1
         version: 3.18.1
-      '@zhaenggg/dsh-ssh':
+      '@zhaeng/dsh-ssh':
         specifier: workspace:^
         version: link:../ssh
     devDependencies:

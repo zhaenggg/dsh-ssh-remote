@@ -1,5 +1,5 @@
 {
-  "name": "@zhaenggg/dsh-fs-ssh",
+  "name": "@zhaeng/dsh-fs-ssh",
   "description": "SSH/SFTP filesystem provider for DeepSeek Harness",
   "version": "0.1.0",
   "publishConfig": {
@@ -37,7 +37,7 @@
     "@deepseek-ai/dsh-fs": "^0.1.0-rc.2"
   },
   "dependencies": {
-    "@zhaenggg/dsh-ssh": "workspace:^"
+    "@zhaeng/dsh-ssh": "workspace:^"
   },
   "devDependencies": {
     "@deepseek-ai/dsh-invariants": "^0.1.0-rc.2",

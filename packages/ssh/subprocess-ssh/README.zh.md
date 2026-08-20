@@ -1,8 +1,8 @@
-# @zhaenggg/dsh-subprocess-ssh
+# @zhaeng/dsh-subprocess-ssh
 
 [English](README.md) | 中文
 
-[`@deepseek-ai/dsh-subprocess`](../../subprocess/subprocess/README.md) 能力在远程 SSH 主机上的 Service Provider：`SshSubprocessRuntime`（默认导出，`ctx.subprocess`）把每个 spawn spec 作为共享 [`ctx.ssh`](../ssh/README.md) 连接上的一条 `ssh2` exec 通道执行。[`@zhaenggg/dsh-fs-routing`](../fs-routing/README.md) 为每个 host key 构造一个实例；spec 的 `cwd` 选定主机。
+[`@deepseek-ai/dsh-subprocess`](../../subprocess/subprocess/README.md) 能力在远程 SSH 主机上的 Service Provider：`SshSubprocessRuntime`（默认导出，`ctx.subprocess`）把每个 spawn spec 作为共享 [`ctx.ssh`](../ssh/README.md) 连接上的一条 `ssh2` exec 通道执行。[`@zhaeng/dsh-fs-routing`](../fs-routing/README.md) 为每个 host key 构造一个实例；spec 的 `cwd` 选定主机。
 
 ## Behavior
 

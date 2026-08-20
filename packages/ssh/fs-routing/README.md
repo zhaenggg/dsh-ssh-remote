@@ -1,4 +1,4 @@
-# @zhaenggg/dsh-fs-routing
+# @zhaeng/dsh-fs-routing
 
 English | [中文](README.zh.md)
 
@@ -15,7 +15,7 @@ Routing Service Provider that lets one harness instance serve local and `ssh://h
 
 ```yaml
 - id: fs-routing
-  name: '@zhaenggg/dsh-fs-routing'
+  name: '@zhaeng/dsh-fs-routing'
   config:
     cwd: /path/to/local/workspace   # local backend default; default: process.cwd()
 ```
