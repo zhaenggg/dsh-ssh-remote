@@ -32,17 +32,20 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "@deepseek-ai/dsh-invariants": "^0.0.1-rc.1",
+    "@deepseek-ai/dsh-invariants": "^0.1.0-rc.2",
     "@deepseek-ai/cordis": "^4.0.1",
-    "@deepseek-ai/dsh-subprocess": "^0.0.1-rc.1"
+    "@deepseek-ai/dsh-subprocess": "^0.1.0-rc.2"
   },
   "dependencies": {
     "@zhaenggg/dsh-ssh": "workspace:^",
     "@deepseek-ai/schemastery": "^3.18.1"
   },
   "devDependencies": {
-    "@deepseek-ai/dsh-invariants": "^0.0.1-rc.1",
-    "@deepseek-ai/dsh-subprocess": "^0.0.1-rc.1",
+    "@deepseek-ai/dsh-invariants": "^0.1.0-rc.2",
+    "@deepseek-ai/dsh-subprocess": "^0.1.0-rc.2",
     "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsdown"
   }
 }

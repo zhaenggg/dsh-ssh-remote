@@ -6,25 +6,5 @@
   },
   "include": [
     "src"
-  ],
-  "references": [
-    {
-      "path": "../../../vendor/cordis"
-    },
-    {
-      "path": "../../runtime-diagnostics/invariants"
-    },
-    {
-      "path": "../../client/runtime"
-    },
-    {
-      "path": "../../client/ui-slots"
-    },
-    {
-      "path": "../../client/ui-settings"
-    },
-    {
-      "path": "../../client/web-react"
-    }
   ]
 }

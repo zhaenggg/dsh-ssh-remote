@@ -65,13 +65,14 @@ With no SSH profile configured the composition behaves exactly like the local pr
 
 ## Develop
 
+Self-contained workspace — build with one command (dependencies come from npm):
+
 ```sh
-git clone https://github.com/zhaenggg/dsh-ssh-remote vendor/dsh-ssh-remote   # inside a harness checkout, or symlink the packages
-pnpm install
-pnpm vitest run packages/ssh
+pnpm install --ignore-scripts
+pnpm -r --filter './packages/*/*' run build   # tsc typecheck + tsdown bundles per package
 ```
 
-Tests include a REAL-composition suite that boots a test `cordis.yml` through the cordis Loader with the routing layer mounted.
+The package tests (including the REAL-composition suite) run inside a [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) checkout, where the full workspace graph and `dsh-test-sandbox` resolve.
 
 ## Known limitations
 

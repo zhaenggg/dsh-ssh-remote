@@ -37,30 +37,33 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "@deepseek-ai/dsh-invariants": "^0.0.1-rc.1",
+    "@deepseek-ai/dsh-invariants": "^0.1.0-rc.2",
     "@deepseek-ai/cordis": "^4.0.1",
-    "@deepseek-ai/dsh-fs": "^0.0.1-rc.1",
-    "@deepseek-ai/dsh-subprocess": "^0.0.1-rc.1"
+    "@deepseek-ai/dsh-fs": "^0.1.0-rc.2",
+    "@deepseek-ai/dsh-subprocess": "^0.1.0-rc.2"
   },
   "dependencies": {
     "@deepseek-ai/schemastery": "^3.18.1",
     "@zhaenggg/dsh-ssh": "workspace:^",
-    "@deepseek-ai/dsh-fs-local": "^0.0.1-rc.1",
+    "@deepseek-ai/dsh-fs-local": "^0.1.0-rc.2",
     "@zhaenggg/dsh-fs-ssh": "workspace:^",
-    "@deepseek-ai/dsh-subprocess-local": "^0.0.1-rc.1",
+    "@deepseek-ai/dsh-subprocess-local": "^0.1.0-rc.2",
     "@zhaenggg/dsh-subprocess-ssh": "workspace:^",
-    "@deepseek-ai/dsh-fs-sandbox": "^0.0.1-rc.1",
-    "@deepseek-ai/dsh-sandbox": "^0.0.1-rc.1",
-    "@deepseek-ai/dsh-shell": "^0.0.1-rc.1",
-    "@deepseek-ai/dsh-bash-sandbox": "^0.0.1-rc.1"
+    "@deepseek-ai/dsh-fs-sandbox": "^0.1.0-rc.2",
+    "@deepseek-ai/dsh-sandbox": "^0.1.0-rc.2",
+    "@deepseek-ai/dsh-shell": "^0.1.0-rc.2",
+    "@deepseek-ai/dsh-bash-sandbox": "^0.1.0-rc.2"
   },
   "devDependencies": {
     "@deepseek-ai/cordis-plugin-include": "^1.0.6",
     "@deepseek-ai/cordis-plugin-loader": "^1.0.2",
-    "@deepseek-ai/dsh-fs": "^0.0.1-rc.1",
-    "@deepseek-ai/dsh-invariants": "^0.0.1-rc.1",
-    "@deepseek-ai/dsh-sandbox-policy": "^0.0.1-rc.1",
-    "@deepseek-ai/dsh-subprocess": "^0.0.1-rc.1",
+    "@deepseek-ai/dsh-fs": "^0.1.0-rc.2",
+    "@deepseek-ai/dsh-invariants": "^0.1.0-rc.2",
+    "@deepseek-ai/dsh-sandbox-policy": "^0.1.0-rc.2",
+    "@deepseek-ai/dsh-subprocess": "^0.1.0-rc.2",
     "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsdown"
   }
 }

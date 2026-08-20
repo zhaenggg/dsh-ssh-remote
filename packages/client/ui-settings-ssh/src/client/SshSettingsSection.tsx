@@ -4,7 +4,6 @@
  */
 import { useCallback, useEffect, useState, type FC } from 'react'
 import type { SettingsSectionOwnerProps } from '@deepseek-ai/dsh-client-ui-settings/client'
-import type { IApiClient } from '@deepseek-ai/dsh-api-remotes/client'
 
 interface SshProfile {
   name: string
@@ -117,7 +116,12 @@ const ProfileCard: FC<{
 
 // Main section
 type Props = SettingsSectionOwnerProps & {
-  api?: Pick<IApiClient, 'settings'>
+  api?: {
+    settings: {
+      describe(arg: Record<string, never>): Promise<{ result: { ok: true, value: { namespaces: Array<{ ns: string, value: unknown }> } } | { ok: false, error: { message: string } } }>
+      replace(arg: { ns: string, section: unknown }): Promise<{ result: { ok: true } | { ok: false, error: { message: string } } }>
+    }
+  }
 }
 
 export const SshSettingsSection: FC<Props> = function SshSettingsSectionFC(props) {

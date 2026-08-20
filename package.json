@@ -2,5 +2,15 @@
   "name": "dsh-ssh-remote",
   "private": true,
   "type": "module",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "tsdown": "^0.14.0",
+    "@types/node": "^24.0.0",
+    "vitest": "^4.1.8",
+    "lightningcss": "^1.30.0"
+  },
+  "scripts": {
+    "build": "pnpm -r --filter './packages/*/*' run build"
+  }
 }
