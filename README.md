@@ -84,14 +84,13 @@ The package tests (including the REAL-composition suite) run inside a [deepseek-
 
 ## Publish
 
-Packages are published under the `@zhaenggg` scope (`0.1.0`). Dependencies on official `@deepseek-ai/*` packages use the currently published ranges (`dsh-*` `^0.0.1-rc.x`, `cordis` `^4.0.1`); inter-package references use `workspace:` and are resolved at publish time.
+Packages are published under the [`@zhaeng`](https://www.npmjs.com/~zhaeng) scope (npm). Dependencies on official `@deepseek-ai/*` packages use published ranges (`dsh-* ^0.1.0-rc.x`, `cordis ^4.0.1`); inter-package references are pinned to matching versions.
+
+Publishing is automated by one script (install → build → publish in dependency order). Accounts with two-factor authentication need an Automation-classic token in `~/.npmrc`; granular tokens and web-login tokens are rejected by the registry for publish.
 
 ```sh
-npm login          # as zhaenggg
 ./scripts/publish.sh
 ```
-
-Validated against deepseek-harness master (`e11fe1c`) with a real-host e2e on 192.168.21.250.
 
 ## License
 
