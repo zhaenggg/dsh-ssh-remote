@@ -52,7 +52,7 @@ With no SSH profile configured the composition behaves exactly like the local pr
 ```json
 [
   {
-    "host": "192.168.21.250",
+    "host": "192.0.2.10",
     "port": 8322,
     "username": "zz",
     "password": "…",
@@ -61,7 +61,7 @@ With no SSH profile configured the composition behaves exactly like the local pr
 ]
 ```
 
-`privateKeyPath` / `privateKey` are also accepted. A session cwd of `ssh://192.168.21.250:8322/home/zz` routes to that host; unknown hosts fail loud (`no profile for <host>`), never a silent local fallback. The browser settings page writes the same profile store.
+`privateKeyPath` / `privateKey` are also accepted. A session cwd of `ssh://192.0.2.10:8322/home/zz` routes to that host; unknown hosts fail loud (`no profile for <host>`), never a silent local fallback. The browser settings page writes the same profile store.
 
 ## Develop
 
