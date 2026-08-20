@@ -1,7 +1,7 @@
 /**
  * SSH connection pool. Each workspace ssh://host/path routes to its own
  * connection, so multiple remote servers can be open simultaneously.
- * @module @deepseek-ai/dsh-ssh
+ * @module @zhaenggg/dsh-ssh
  */
 
 import { Context, Service } from '@deepseek-ai/cordis'

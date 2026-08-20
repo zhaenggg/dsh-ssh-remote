@@ -1,4 +1,4 @@
-# @deepseek-ai/dsh-ssh
+# @zhaenggg/dsh-ssh
 
 English | [中文](README.zh.md)
 
@@ -25,7 +25,7 @@ An entry without a `host` contributes no profile; the shipped web composition in
 
 ```yaml
 - id: ssh
-  name: '@deepseek-ai/dsh-ssh'
+  name: '@zhaenggg/dsh-ssh'
   config:
     host: 192.168.1.10      # empty in multi-host compositions
     port: 22

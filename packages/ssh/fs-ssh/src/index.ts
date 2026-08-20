@@ -1,7 +1,7 @@
 /**
  * SSH/SFTP provider for the filesystem capability seam.
  * Paths, contents, and atomic staging files remain inside the remote host.
- * @module @deepseek-ai/dsh-fs-ssh
+ * @module @zhaenggg/dsh-fs-ssh
  */
 
 import { createHash } from 'node:crypto'
@@ -18,8 +18,8 @@ import type {
   FsWriteIntent,
   FsWriteOutcome,
 } from '@deepseek-ai/dsh-fs'
-import type { Client, SshPoolLike } from '@deepseek-ai/dsh-ssh'
-import { hostKeyFromPath, isSshPath, parseSshPath } from '@deepseek-ai/dsh-ssh/paths'
+import type { Client, SshPoolLike } from '@zhaenggg/dsh-ssh'
+import { hostKeyFromPath, isSshPath, parseSshPath } from '@zhaenggg/dsh-ssh/paths'
 import type { SFTPWrapper, Stats } from 'ssh2'
 
 const BINARY_SAMPLE_BYTES = 8192

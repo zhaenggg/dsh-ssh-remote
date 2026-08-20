@@ -17,7 +17,7 @@ import Include from '@deepseek-ai/cordis-plugin-include'
 import SandboxProvider from '@deepseek-ai/dsh-sandbox'
 import type { ConfinedArgv, SandboxPolicy } from '@deepseek-ai/dsh-sandbox'
 import SandboxPolicyService from '@deepseek-ai/dsh-sandbox-policy'
-import SshRuntime from '@deepseek-ai/dsh-ssh'
+import SshRuntime from '@zhaenggg/dsh-ssh'
 import '@deepseek-ai/dsh-fs'
 import '@deepseek-ai/dsh-shell'
 import * as FsRouting from '../src/index.ts'
@@ -46,7 +46,7 @@ suite('fs-routing real Loader composition through cordis.yml', () => {
     await writeFile(join(root, 'note.txt'), 'routed-local', 'utf-8')
     const configPath = join(root, 'cordis.yml')
     await writeFile(configPath, [
-      "- name: '@deepseek-ai/dsh-ssh'",
+      "- name: '@zhaenggg/dsh-ssh'",
       '  config:',
       "    host: ''",
       "    username: ''",
@@ -55,7 +55,7 @@ suite('fs-routing real Loader composition through cordis.yml', () => {
       '  config:',
       '    mode: danger-full-access',
       `    workspaceRoot: ${JSON.stringify(root)}`,
-      "- name: '@deepseek-ai/dsh-fs-routing'",
+      "- name: '@zhaenggg/dsh-fs-routing'",
       '  config:',
       `    cwd: ${JSON.stringify(root)}`,
       '',
@@ -66,10 +66,10 @@ suite('fs-routing real Loader composition through cordis.yml', () => {
     await context.plugin(Loader)
     context.loader.builtins.include = Include
     const modules = new Map<string, unknown>([
-      ['@deepseek-ai/dsh-ssh', SshRuntime],
+      ['@zhaenggg/dsh-ssh', SshRuntime],
       ['@deepseek-ai/dsh-test-sandbox', PassthroughSandbox],
       ['@deepseek-ai/dsh-sandbox-policy', SandboxPolicyService],
-      ['@deepseek-ai/dsh-fs-routing', FsRouting],
+      ['@zhaenggg/dsh-fs-routing', FsRouting],
     ])
     context.loader.internal = {
       version: 'v2',

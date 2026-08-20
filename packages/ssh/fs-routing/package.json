@@ -1,5 +1,5 @@
 {
-  "name": "@deepseek-ai/dsh-fs-routing",
+  "name": "@zhaenggg/dsh-fs-routing",
   "description": "Routing filesystem and subprocess providers: one dsh instance serving local and ssh:// remote workspaces",
   "version": "0.1.0-rc.5",
   "publishConfig": {
@@ -44,11 +44,11 @@
   },
   "dependencies": {
     "@deepseek-ai/schemastery": "workspace:^",
-    "@deepseek-ai/dsh-ssh": "workspace:^",
+    "@zhaenggg/dsh-ssh": "workspace:^",
     "@deepseek-ai/dsh-fs-local": "workspace:^",
-    "@deepseek-ai/dsh-fs-ssh": "workspace:^",
+    "@zhaenggg/dsh-fs-ssh": "workspace:^",
     "@deepseek-ai/dsh-subprocess-local": "workspace:^",
-    "@deepseek-ai/dsh-subprocess-ssh": "workspace:^",
+    "@zhaenggg/dsh-subprocess-ssh": "workspace:^",
     "@deepseek-ai/dsh-fs-sandbox": "workspace:^",
     "@deepseek-ai/dsh-sandbox": "workspace:^",
     "@deepseek-ai/dsh-shell": "workspace:^",

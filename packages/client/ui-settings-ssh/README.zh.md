@@ -1,4 +1,4 @@
-# @deepseek-ai/dsh-client-ui-settings-ssh
+# @zhaenggg/dsh-client-ui-settings-ssh
 
 [English](README.md) | 中文
 

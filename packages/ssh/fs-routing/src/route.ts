@@ -4,11 +4,11 @@
  * stable backend discriminator so downstream operations (stat/read/list/...)
  * can route back to the exact sub-backend that produced it without inspecting
  * the opaque model-facing path.
- * @module @deepseek-ai/dsh-fs-routing/route
+ * @module @zhaenggg/dsh-fs-routing/route
  */
 
 import { FsTargetKey } from '@deepseek-ai/dsh-fs'
-import { hostKeyFromPath, isSshPath } from '@deepseek-ai/dsh-ssh/paths'
+import { hostKeyFromPath, isSshPath } from '@zhaenggg/dsh-ssh/paths'
 
 /** Prefix for local-backend targets. */
 export const LOCAL_PREFIX = 'route:local:'

@@ -1,4 +1,4 @@
-# @deepseek-ai/dsh-fs-routing
+# @zhaenggg/dsh-fs-routing
 
 [English](README.md) | 中文
 
@@ -15,7 +15,7 @@
 
 ```yaml
 - id: fs-routing
-  name: '@deepseek-ai/dsh-fs-routing'
+  name: '@zhaenggg/dsh-fs-routing'
   config:
     cwd: /path/to/local/workspace   # local backend default; default: process.cwd()
 ```

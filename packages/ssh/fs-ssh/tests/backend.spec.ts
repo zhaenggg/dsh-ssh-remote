@@ -7,7 +7,7 @@ import { EventEmitter } from 'node:events'
 import { afterEach, describe, expect, it } from 'vitest'
 import { posix } from 'node:path'
 import { Context } from '@deepseek-ai/cordis'
-import type { Client, SshPoolLike } from '@deepseek-ai/dsh-ssh'
+import type { Client, SshPoolLike } from '@zhaenggg/dsh-ssh'
 import SshFileSystem from '../src/index.ts'
 
 let context: Context | undefined

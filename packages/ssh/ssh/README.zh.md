@@ -1,4 +1,4 @@
-# @deepseek-ai/dsh-ssh
+# @zhaenggg/dsh-ssh
 
 [English](README.md) | 中文
 
@@ -25,7 +25,7 @@ DeepSeek Harness 远程服务器适配器共享的 SSH 连接生命周期：`Ssh
 
 ```yaml
 - id: ssh
-  name: '@deepseek-ai/dsh-ssh'
+  name: '@zhaenggg/dsh-ssh'
   config:
     host: 192.168.1.10      # empty in multi-host compositions
     port: 22

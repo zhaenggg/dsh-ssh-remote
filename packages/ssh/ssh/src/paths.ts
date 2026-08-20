@@ -1,6 +1,6 @@
 /**
  * Remote-path helpers: ssh://host/path parsing.
- * @module @deepseek-ai/dsh-ssh/paths
+ * @module @zhaenggg/dsh-ssh/paths
  */
 
 const PREFIX = 'ssh://'

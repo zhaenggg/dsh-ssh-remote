@@ -8,15 +8,17 @@ SSH remote execution plugin set for [DeepSeek Harness](https://github.com/deepse
 
 | Package | Role |
 |---|---|
-| `@deepseek-ai/dsh-ssh` | Connection pool (service `ctx.ssh`). Profiles from `DSH_SSH_PROFILES` env (JSON) or the browser-side settings page. No profiles ⇒ local-only, nothing remote activates. |
-| `@deepseek-ai/dsh-fs-ssh` | SFTP filesystem backend for the `fs` seam. |
-| `@deepseek-ai/dsh-subprocess-ssh` | Remote exec backend for the `subprocess` seam. |
-| `@deepseek-ai/dsh-fs-routing` | The composition layer: one `ctx.fs` / `ctx.subprocess` / `ctx.shell` routed by session cwd — local cwds keep the sandboxed local backends, `ssh://` cwds run on the remote host. |
-| `@deepseek-ai/dsh-client-ui-settings-ssh` | Browser-side SSH server settings page. |
+| `@zhaenggg/dsh-ssh` | Connection pool (service `ctx.ssh`). Profiles from `DSH_SSH_PROFILES` env (JSON) or the browser-side settings page. No profiles ⇒ local-only, nothing remote activates. |
+| `@zhaenggg/dsh-fs-ssh` | SFTP filesystem backend for the `fs` seam. |
+| `@zhaenggg/dsh-subprocess-ssh` | Remote exec backend for the `subprocess` seam. |
+| `@zhaenggg/dsh-fs-routing` | The composition layer: one `ctx.fs` / `ctx.subprocess` / `ctx.shell` routed by session cwd — local cwds keep the sandboxed local backends, `ssh://` cwds run on the remote host. |
+| `@zhaenggg/dsh-client-ui-settings-ssh` | Browser-side SSH server settings page. |
 
 `plugins/ssh-selftest` is a dev-only driver that runs one agent turn against an `ssh://` cwd end-to-end.
 
 ## Requirements
+
+The plugin packages are published under the `@zhaenggg` npm scope; they depend on official `@deepseek-ai/*` harness packages (`dsh-fs`, `dsh-subprocess`, `dsh-shell`, `dsh-sandbox*`, `cordis`, …), which come from the harness install.
 
 The plugin set builds and tests inside a [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) pnpm workspace checkout: the packages depend on workspace siblings (`dsh-fs`, `dsh-subprocess`, `dsh-shell`, `dsh-sandbox*`, …). Full `ssh://` cwd support also needs the host-side integration (workspace/session/shell/sandbox seams accepting `ssh://` cwds); this repository carries the plugin packages, and the host integration ships with the harness.
 
@@ -36,9 +38,9 @@ In your profile's `cordis.patch.yml` (or app composition), replace the single-ba
 
 - insert:
     - id: ssh
-      name: '@deepseek-ai/dsh-ssh'
+      name: '@zhaenggg/dsh-ssh'
     - id: fs-routing
-      name: '@deepseek-ai/dsh-fs-routing'
+      name: '@zhaenggg/dsh-fs-routing'
 ```
 
 With no SSH profile configured the composition behaves exactly like the local providers it replaces.

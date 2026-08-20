@@ -1,12 +1,12 @@
 /**
  * The routed shell executor for local + ssh:// workspaces.
- * @module @deepseek-ai/dsh-fs-routing/shell
+ * @module @zhaenggg/dsh-fs-routing/shell
  */
 
 import { SandboxBashExecutor } from '@deepseek-ai/dsh-bash-sandbox'
 import { ShellExecutor } from '@deepseek-ai/dsh-shell'
 import type { ShellProcess, ShellRunResult, ShellExecRequest, ShellExecSpec } from '@deepseek-ai/dsh-shell'
-import { isSshPath } from '@deepseek-ai/dsh-ssh/paths'
+import { isSshPath } from '@zhaenggg/dsh-ssh/paths'
 import type { Context } from '@deepseek-ai/cordis'
 import type { SubprocessHandle, SubprocessOutcome, SubprocessSpawnSpec } from '@deepseek-ai/dsh-subprocess'
 import type { RoutingFsConfig, RoutingSubprocessRuntime } from './index.ts'

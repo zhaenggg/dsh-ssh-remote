@@ -1,6 +1,6 @@
 /**
  * SSH settings page host half: registers the settings.section slot.
- * @module @deepseek-ai/dsh-client-ui-settings-ssh
+ * @module @zhaenggg/dsh-client-ui-settings-ssh
  */
 import type { Context } from '@deepseek-ai/cordis'
 

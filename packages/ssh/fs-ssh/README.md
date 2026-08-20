@@ -1,8 +1,8 @@
-# @deepseek-ai/dsh-fs-ssh
+# @zhaenggg/dsh-fs-ssh
 
 English | [中文](README.zh.md)
 
-Service Provider for the [`@deepseek-ai/dsh-fs`](../../fs/fs/README.md) capability over SFTP: `SshFileSystem` (default export) implements the `FileSystem` operations on one remote host through the shared [`ctx.ssh`](../ssh/README.md) connection pool. [`@deepseek-ai/dsh-fs-routing`](../fs-routing/README.md) constructs one instance per host key and routes `ssh://` workspaces to it; the class also mounts standalone through its `static inject = ['ssh']`.
+Service Provider for the [`@deepseek-ai/dsh-fs`](../../fs/fs/README.md) capability over SFTP: `SshFileSystem` (default export) implements the `FileSystem` operations on one remote host through the shared [`ctx.ssh`](../ssh/README.md) connection pool. [`@zhaenggg/dsh-fs-routing`](../fs-routing/README.md) constructs one instance per host key and routes `ssh://` workspaces to it; the class also mounts standalone through its `static inject = ['ssh']`.
 
 ## Behavior
 

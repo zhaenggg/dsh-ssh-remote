@@ -1,17 +1,17 @@
 /**
  * Routing backends for the filesystem and subprocess capability seams.
- * @module @deepseek-ai/dsh-fs-routing
+ * @module @zhaenggg/dsh-fs-routing
  */
 
 import type { Context } from '@deepseek-ai/cordis'
 import z from '@deepseek-ai/schemastery'
 import { SandboxedFileSystem } from '@deepseek-ai/dsh-fs-sandbox'
-import { SshFileSystem } from '@deepseek-ai/dsh-fs-ssh'
+import { SshFileSystem } from '@zhaenggg/dsh-fs-ssh'
 export { RoutingShellExecutor } from './shell.ts'
 import { RoutingShellExecutor } from './shell.ts'
 import { LocalSubprocessRuntime } from '@deepseek-ai/dsh-subprocess-local'
-import { SshSubprocessRuntime } from '@deepseek-ai/dsh-subprocess-ssh'
-import type { SshPoolLike } from '@deepseek-ai/dsh-ssh'
+import { SshSubprocessRuntime } from '@zhaenggg/dsh-subprocess-ssh'
+import type { SshPoolLike } from '@zhaenggg/dsh-ssh'
 import { FsTargetKey, FileSystem, FsError, FsVersion } from '@deepseek-ai/dsh-fs'
 import type {
   FsDirEntry, FsEditOutcome, FsEditRequest, FsInfo, FsPathInfo,
@@ -22,7 +22,7 @@ import { SubprocessRuntime } from '@deepseek-ai/dsh-subprocess'
 import type {
   SubprocessHandle, SubprocessSpawnSpec, SubprocessTerminalHandle, SubprocessTerminalSpawnSpec,
 } from '@deepseek-ai/dsh-subprocess'
-import { hostKeyFromPath } from '@deepseek-ai/dsh-ssh/paths'
+import { hostKeyFromPath } from '@zhaenggg/dsh-ssh/paths'
 import { parseRoutingKey, localKey, sshKey } from './route.ts'
 
 export interface RoutingFsConfig {

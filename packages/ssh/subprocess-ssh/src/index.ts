@@ -1,7 +1,7 @@
 /**
  * SSH Service Provider for the subprocess capability seam.
  * Each handle starts through the shared SSH connection and executes on the remote host.
- * @module @deepseek-ai/dsh-subprocess-ssh
+ * @module @zhaenggg/dsh-subprocess-ssh
  */
 
 import { Context } from '@deepseek-ai/cordis'
@@ -18,9 +18,9 @@ import type {
   SubprocessTerminalSpawnSpec,
 } from '@deepseek-ai/dsh-subprocess'
 // Pull in ctx.ssh augmentation
-import type {} from '@deepseek-ai/dsh-ssh'
-import type { Client, SshPoolLike } from '@deepseek-ai/dsh-ssh'
-import { hostKeyFromPath, isSshPath, parseSshPath } from '@deepseek-ai/dsh-ssh/paths'
+import type {} from '@zhaenggg/dsh-ssh'
+import type { Client, SshPoolLike } from '@zhaenggg/dsh-ssh'
+import { hostKeyFromPath, isSshPath, parseSshPath } from '@zhaenggg/dsh-ssh/paths'
 
 /** Configuration for the SSH subprocess adapter. */
 export interface Config {
