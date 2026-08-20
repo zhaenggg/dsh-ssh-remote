@@ -1,0 +1,6 @@
+{
+  "name": "dsh-ssh-remote",
+  "private": true,
+  "type": "module",
+  "license": "MIT"
+}
