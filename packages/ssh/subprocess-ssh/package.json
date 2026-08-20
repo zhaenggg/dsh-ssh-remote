@@ -37,7 +37,7 @@
     "@deepseek-ai/dsh-subprocess": "^0.1.0-rc.2"
   },
   "dependencies": {
-    "@zhaeng/dsh-ssh": "workspace:^",
+    "@zhaeng/dsh-ssh": "^0.1.0",
     "@deepseek-ai/schemastery": "^3.18.1"
   },
   "devDependencies": {

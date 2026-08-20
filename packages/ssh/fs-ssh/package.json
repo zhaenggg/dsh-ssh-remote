@@ -37,7 +37,7 @@
     "@deepseek-ai/dsh-fs": "^0.1.0-rc.2"
   },
   "dependencies": {
-    "@zhaeng/dsh-ssh": "workspace:^"
+    "@zhaeng/dsh-ssh": "^0.1.0"
   },
   "devDependencies": {
     "@deepseek-ai/dsh-invariants": "^0.1.0-rc.2",
