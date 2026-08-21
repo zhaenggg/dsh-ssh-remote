@@ -4,7 +4,7 @@ SSH remote execution plugin set for [DeepSeek Harness](https://github.com/deepse
 
 中文说明见 [README.zh.md](README.zh.md)。
 
-![settings](docs/settings-ssh.png)
+![settings](docs/settings-ssh-v2.png)
 
 *Configure SSH servers in Settings → `SSH` (address, port, credentials). Saved servers appear in the workspace picker.*
 
