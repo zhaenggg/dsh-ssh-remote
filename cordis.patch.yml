@@ -16,3 +16,5 @@
       name: '@zhaeng/dsh-ssh'
     - id: fs-routing
       name: '@zhaeng/dsh-fs-routing'
+    - id: ui-settings-ssh
+      name: '@zhaeng/dsh-client-ui-settings-ssh'
