@@ -8,7 +8,7 @@ SSH remote execution plugin set for [DeepSeek Harness](https://github.com/deepse
 
 *Configure SSH servers in Settings → `SSH` (address, port, credentials). Saved servers appear in the workspace picker.*
 
-![demo](docs/ssh-remote-demo.gif)
+![demo](docs/ssh-session-demo-v3.gif)
 
 *A session whose workspace is an `ssh://` directory: every command and file operation runs on the remote machine.*
 
