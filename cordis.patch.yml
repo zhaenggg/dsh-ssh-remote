@@ -1,0 +1,18 @@
+# dsh-ssh-remote bundle patch.
+# Inserts the SSH connection pool and the cwd routing layer into the profile's
+# cordis composition, and replaces the single-backend local providers. Mirrors the
+# manual steps in README `Compose`. Declared in package.json dsh.bundle.patch
+# so `dsh plugin add` can install it directly.
+- id: fs-sandbox
+  disabled: true
+- id: subprocess
+  disabled: true
+- id: bash-sandbox
+  disabled: true
+- id: pwsh-sandbox
+  disabled: true
+- insert:
+    - id: ssh
+      name: '@zhaeng/dsh-ssh'
+    - id: fs-routing
+      name: '@zhaeng/dsh-fs-routing'
