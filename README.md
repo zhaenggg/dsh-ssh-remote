@@ -4,6 +4,14 @@ SSH remote execution plugin set for [DeepSeek Harness](https://github.com/deepse
 
 中文说明见 [README.zh.md](README.zh.md)。
 
+![settings](docs/settings-ssh.png)
+
+*Configure SSH servers in Settings → `SSH` (address, port, credentials). Saved servers appear in the workspace picker.*
+
+![demo](docs/ssh-remote-demo.gif)
+
+*A session whose workspace is an `ssh://` directory: every command and file operation runs on the remote machine.*
+
 ## Packages
 
 | Package | Role |
@@ -73,6 +81,10 @@ pnpm -r --filter './packages/*/*' run build   # tsc typecheck + tsdown bundles p
 ```
 
 The package tests (including the REAL-composition suite) run inside a [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) checkout, where the full workspace graph and `dsh-test-sandbox` resolve.
+
+## Compatibility
+
+- [`dsh-better-sidebar`](https://github.com/omdsh-dev/DSH-better-sidebar) (VSCode-like sidebar: explorer / editor / terminal) works unchanged over remote workspaces: its panels consume the same routed `fs` / `subprocess` seams, so a session whose workspace is an `ssh://` directory browses and edits remote files in the sidebar.
 
 ## Known limitations
 
